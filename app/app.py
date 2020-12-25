@@ -25,12 +25,12 @@ def login_required(method):
 @app.errorhandler(401)
 def error_handler(error):
     response = jsonify({})
+    response.headers['WWW-Authenticate'] = 'Bearer realm="example"'
     return response, error.code
 
 @app.route('/')
 def index():
     response = jsonify({'message' : 'Hello World!'})
-    response.headers['WWW-Authenticate'] = 'Bearer realm=""'
     return response, 200
 
 @app.route('/token_auth')
