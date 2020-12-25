@@ -11,4 +11,6 @@ services:
       - ./app:/usr/src/app
     ports:
       - "5000:5000"
-    command: "python3 f.py"
+    command: "python3 app.py"
+    environment: 
+      - SAMPLE_API_TOKEN=44KI44GP44GC44KL44Go44O844GP44KT
