@@ -69,4 +69,5 @@ Flaskでbearer認証[^1]式のAPIを実装するテストプロジェクトで�
 
 
 [^1]: [RFC 6750 The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://tools.ietf.org/html/rfc6750)
+
 [^2]: [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
